@@ -224,7 +224,7 @@ class Chart extends React.Component {
           <div id="mainContainer">
             <h1></h1>
             <GetMap year={this.state.defyear} />
-            <div id="leginf">Как изменилась численность населения с 1 января 2000 года</div>
+            <div id="leginf">Как изменилась численность населения <br id="legendbr"></br>с 1 января 2000 года</div>
             {this.renderLegend(this.state.defyear)}
             <div id='inputContainer'>
             <input

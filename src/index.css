@@ -93,7 +93,7 @@ body {
   justify-content: center;
   text-align: center;
   width: 0;
-  font-size: 15px;
+  font-size: 13px;
   font-family: 'RobotoMono';
   margin: 0 0 0 0;
 }
@@ -120,7 +120,11 @@ code {
   width: 100%;
   font-size: 15px;
   text-align: left;
-  margin-top: 36px;
+  margin-top: 24px;
+}
+
+#legendbr {
+  display: inline;
 }
 
 #legend {
@@ -131,20 +135,20 @@ code {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   margin-top: 6px;
-  margin-bottom: 61px;
+  margin-bottom: 36px;
 }
 
 #zero {
   position: absolute;
   width: 100%;
-  font-size: 13px;
+  font-size: 10px;
   top: 12;
   text-align: center;
   transform: translate(0px,18px);
 }
 
 .legendTile {
-  font-size: 13px;
+  font-size: 10px;
   position: relative;
   top: 12;
   transform: translate(0px,18px);
@@ -251,6 +255,10 @@ h2 {
   h2 {
     font-size: 21px;
   }
+
+  .legendTile {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 710px) {
@@ -258,6 +266,30 @@ h2 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #zero {
+    font-size: 13px;
+  }
+
+  #leginf {
+    margin-top: 36px;
+  }
+
+  #legendbr {
+    display: none;
+  }
+
+  #legend {
+    margin-bottom: 54px;
+  }
+
+  .sliderticks p {
+    font-size: 13px;
+  }
+
+  .legendTile {
+    font-size: 13px;
   }
 }
 

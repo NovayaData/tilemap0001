@@ -5,20 +5,41 @@ import data from './data.json';
 
 const colors = {
   "b0": "#f7f7f7",
-  "b1": "#bf381d",
-  "b2": "#d98877",
-  "b3": "#e8b8ad",
-  "b4": "#a3e1f5",
-  "b5": "#66cdef",
-  "b6": "#00ace5"
-};
 
-const startYear = 2001;
+  "b1": "#580000",
+  "b2": "#7d140f",
+  "b3": "#a42918",
+  "b4": "#c5573a",
+  "b5": "#e38f71",
+
+  "b6": "#8dcfee",
+  "b7": "#4eaddd",
+  "b8": "#0089c3",
+  "b9": "#04588e",
+  "b10": "#002b59"
+};
+// const colors = {
+//   "b0": "#f7f7f7",
+//   "b1": "#bf381d",
+//   "b2": "#d98877",
+//   "b3": "#e8b8ad",
+//   "b4": "#a3e1f5",
+//   "b5": "#66cdef",
+//   "b6": "#00ace5",
+// };
+
+const startYear = 2000;
 
 function numberWithCommas(x) {
 
   if (x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    let alm = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    if (x > 0) {
+      return `+${alm}`
+    } else {
+      return alm
+    }
+     
   } else {
     return ""
   }
@@ -95,7 +116,7 @@ class Tile extends React.Component {
           <div 
             className='regAbbr' 
             // style={{color: bin === "b0" ? "#b0b0b0" : "#ffffff"}}
-            style={{color: bin === "b1" | bin === "b6" ? "#ffffff" : "#000000"}}
+            style={{color: bin === "b1" | bin === "b2" | bin === "b3" | bin === "b8" | bin === "b9" | bin === "b10" ? "#ffffff" : "#000000"}}
           >
             {this.props.value.reg_abbr}
           </div>
@@ -201,9 +222,9 @@ class Chart extends React.Component {
   render() {
       return (
           <div id="mainContainer">
-            <h1>Коронавирус ускорил депопуляцию центральной России</h1>
+            <h1></h1>
             <GetMap year={this.state.defyear} />
-            <div id="leginf">Изменение численности населения за год</div>
+            <div id="leginf">Как изменилась численность населения с 1 января 2000 года</div>
             {this.renderLegend(this.state.defyear)}
             <div id='inputContainer'>
             <input

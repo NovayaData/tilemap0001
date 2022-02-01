@@ -119,9 +119,8 @@ code {
   font-family: 'Roboto';
   width: 100%;
   font-size: 15px;
-  top: 12;
   text-align: left;
-  margin-top: 21px;
+  margin-top: 36px;
 }
 
 #legend {
@@ -130,9 +129,9 @@ code {
   height: 6px;
   font-family: 'RobotoMono';
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   margin-top: 6px;
-  margin-bottom: 36px;
+  margin-bottom: 61px;
 }
 
 #zero {

@@ -4,6 +4,7 @@ import './index.css';
 import data from './data.json';
 
 const colors = {
+  "b0": "#f7f7f7",
   "b1": "#bf381d",
   "b2": "#d98877",
   "b3": "#e8b8ad",
@@ -53,7 +54,7 @@ class Tooltip extends React.Component {
         >
         {this.state.displayTooltip &&
         <div className={`tooltip-bubble tooltip-${position}`}>
-          <div className='tooltip-message'><b>{message}</b> <br /> {regnum} {currency}</div>
+          <div className='tooltip-message'><b>{message}</b> <br /> { `${regnum} ${currency}`.replace(/^ %/g, "") }</div>
         </div>
         }
         <span 
@@ -110,7 +111,7 @@ class Legend extends React.Component {
   return (
     <div id="legend">
       <div id="zero">0%</div>
-      {Object.keys(colors).map((d, i) => {
+      {Object.keys(colors).slice(1,).map((d, i) => {
           let num = data.legend[this.props.value][i+1].value;
 
           return (

@@ -226,7 +226,7 @@ h2 {
 
 .tooltip-message {
   background: #ffffff;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   color: #263238;
   font-size: 15px;
   font-family: 'Roboto';

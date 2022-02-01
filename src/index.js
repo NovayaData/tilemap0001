@@ -200,7 +200,7 @@ class Chart extends React.Component {
   render() {
       return (
           <div id="mainContainer">
-            {/* <h1>Смертность</h1> */}
+            <h1>Коронавирус ускорил депопуляцию центральной России</h1>
             <GetMap year={this.state.defyear} />
             <div id="leginf">Изменение численности населения за год</div>
             {this.renderLegend(this.state.defyear)}

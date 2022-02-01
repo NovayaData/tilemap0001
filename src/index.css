@@ -6,9 +6,6 @@ body {
   -ms-user-select: none;
   user-select: none;
   margin: 1%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #494a4d;
@@ -191,7 +188,7 @@ code {
 
 h1 {
   font-size: 36px;
-  font-family: 'Roboto';
+  font-family: 'RobotoBold';
 }
 
 h2 {
@@ -269,4 +266,16 @@ h2 {
   font-family: "RobotoMono";
   src: local("RM"),
    url("RobotoMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("R"),
+   url("Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: local("RB"),
+   url("Roboto-Bold.ttf") format("truetype");
 }
